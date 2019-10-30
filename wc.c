@@ -9,6 +9,16 @@ int main(int argc, char **argv){
 		return 1;
 	}
 
+	if(strcmp("-l", argv[1] == 0){
+		int c, i=0;
+		while((c = fgetc(f)) != EOF){
+			if(c == '\n'){		
+				i++;
+			}
+		}
+		printf("%d\n", i);
+	}
+
 	if(strcmp("-c", argv[1]) == 0){
 		int c,i=0;
 		while((c = fgetc(f)) != EOF){
