@@ -5,6 +5,10 @@
 int main(int argc, char **argv){
 	FILE *f = fopen(argv[1],"r");
 
+	if(argc==3){
+		return 1;
+	}
+
 	if(strcmp("-c", argv[1]) == 0){
 		int c,i=0;
 		while((c = fgetc(f)) != EOF){
